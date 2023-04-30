@@ -1,12 +1,13 @@
-import 'styles.css';
+import './css/styles.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import debounce from 'lodash.debounce';
-import { fetchCountries } from "fetchCountries"     
+import { fetchCountries } from "./js/fetchCountries"     
 const DEBOUNCE_DELAY = 300;
 
 const countriesList = document.querySelector('.country-list');
 const countryInfo = document.querySelector('.country-info');
 const searchBox = document.querySelector('#search-box');
+
 
 countriesList.classList.add('is-hidden');
 countryInfo.classList.add('is-hidden');
